@@ -56,9 +56,9 @@ app.get("/weather",function(req,res){
         humidity : humid,
         windSpeedHour: windSpeed,
         getDay : day,
+        getYear :year,
         getmonth : month,
         gateDate : date,
-        getYear : year,
         heigheastTemp : maxTemp,
         lowestTemp : minTemp,
         tempFeels : feelsLike
@@ -75,8 +75,6 @@ app.post("/",function(req,res){
 app.listen(3000,function(){
   console.log("your server is running on this port");
 })
-
-
 
 // https://api.openweathermap.org/data/2.5/weather?q=kolkata&appid=a799262b1b4eb2433fc650f458d45ba7
 //
