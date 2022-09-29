@@ -1,0 +1,28 @@
+<%- include("header") -%>
+
+<div class="weather-page">
+
+      <h1><%= name  %>, <%= country %></h1>
+      <p><%= getDay %></p> <p><%=gateDate %></p>
+      <p><%= getmonth%></p> <p><%= getYear %></p>
+      <br>
+      <img src="http://openweathermap.org/img/wn/<%= imgIcon %>@2x.png" alt="">
+      <h2><%= temperature %> ℃</h2>
+      <h2><%= weatherDescription %></h2>
+
+        <p class="extra-info"> Feels Like : <%= tempFeels %>℃ |</p>
+        <p class="extra-info">Min-Temp : <%= lowestTemp %>℃ |</p>
+        <p class="extra-info">Max-Temp : <%= heigheastTemp %>℃ |</p><br>
+        <p class="extra-info"> Humidity : <%= humidity %>% |</p>
+        <p class="extra-info">Wind Speed : <%= windSpeedHour %>kmph</p>
+        <br>
+
+    </div>
+    <div class="link-tag">
+      <a href="/">Back To Home</a>
+    </div>
+
+
+
+
+<%- include("footer") -%>
